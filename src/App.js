@@ -1,15 +1,19 @@
-import React,{useState} from 'react';
+import React, { useState,useReducer } from 'react';
 import './App.css';
-import Parent from './Parent'
+import Parent from './Parent';
+import MeraContext from './MyContext';
 
 function App() {
-  let [number,changenumber]=useState(137)
+  let number=useState (137);
+  let num=useReducer()
   return (
-    <div>
-      1st App.js
+    <MeraContext.Provider value= {number}>
+      <div>
+        1st App.js
       <br></br>
-      <Parent number={number}></Parent>
-    </div>
+        <Parent ></Parent>
+      </div>
+    </MeraContext.Provider>
   );
 }
 
