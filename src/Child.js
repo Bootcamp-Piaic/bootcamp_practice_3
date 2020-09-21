@@ -1,7 +1,7 @@
 import React from 'react';
-import MeraContext from './MyContext';
+import MyContext from './MyContext';
 function Child() {
-    let number=React.useContext(MeraContext)
+    let number=React.useContext(MyContext)
   return (
     <div >
       3rd Child.js

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MeraContext=React.createContext(0,()=>{});
+const MyContext=React.createContext(1,()=>{});
 
-export default MeraContext;
+export default MyContext;
 
